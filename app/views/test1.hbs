@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World</title>
+</head>
+<body>
+
+<h1>Greeting</h1>
+
+<form action="">
+  <label>What's your name? <input type=text name=who_to_greet></label>
+  <input type=submit value=Submit>
+</form>
+
+{{#who_to_greet}}
+<p>Hello {{.}}!</p>
+{{/who_to_greet}}
+
+</body>
+</html>

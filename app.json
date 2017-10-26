@@ -1,14 +1,16 @@
 {
   "name": "gp-feedback-prototype",
   "scripts": {
+    "postdeploy": "npm run setup"
   },
   "env": {
-  },
-  "formation": {
-  },
-  "addons": [
+    "NPM_CONFIG_PRODUCTION": "false",
+    "USERNAME": "test",
+    "PASSWORD": "test123"
 
-  ],
+  },
+  "formation": {},
+  "addons": [],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
