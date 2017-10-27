@@ -39,7 +39,7 @@ them when they submit the form.
 ```handlebars
 <form>
   <label>What is your name? <input type=text name=who_to_greet></label>
-  <input type=submit value=Submit>
+  <input type=submit value=Next>
 </form>
 
 {{#who_to_greet}}
