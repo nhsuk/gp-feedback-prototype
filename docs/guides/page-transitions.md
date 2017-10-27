@@ -28,7 +28,7 @@ inputs on the form will have their values passed to the next template.
 <form action="/page-2">
   <p><label>Your name: <input type=text name=my_name></label>
   <p><label>Your address: <textarea name=my_address></textarea></label>
-  <p><input type=submit value=Submit>
+  <p><input type=submit value=Next>
 </form>
 ```
 
@@ -66,7 +66,7 @@ follows;
     {{#if error.my_name}}<span class="error">{{error.my_name}}</span>{{/if}}
   <p><label>Your address: <textarea name=my_address>{{my_address}}</textarea></label>
     {{#if error.my_address}}<span class="error">{{error.my_address}}</span>{{/if}}
-  <p><input type=submit value=Submit>
+  <p><input type=submit value=Next>
 </form>
 ```
 

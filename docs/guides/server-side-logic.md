@@ -51,7 +51,7 @@ create a simple guessing game.
 ```handlebars
 <form>
   <label>What number am I thinking of? <input type=text name=guess></label>
-  <input type=submit value=Submit>
+  <input type=submit value=Next>
 </form>
 
 {{#if correct}}
