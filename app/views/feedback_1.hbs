@@ -1,8 +1,66 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Feedback</title>
-  </head>
-  <body>
-    <p>Feedback options here</p>
-  </body>
+<head>
+<title>GP Feedback Prototype</title>
+</head>
+<body>
+
+  <!-- Start of radio buttons -->
+  <form method="get" class="form" action="">
+    <fieldset>
+      <legend>
+        <h2 class="">What do you want your feedback to achieve?</h2>
+      </legend>
+
+      <!-- Address my issue -->
+      <div class="multiple-choice">
+      <label>
+        <input id="radio-1" type="radio" name="action" value="address-my-issue" checked>
+        I want someone at the surgery to address my issue
+      </label>
+      </div>
+      <!-- -->
+
+      <!-- Address my issue -->
+      <div class="multiple-choice">
+      <label>
+        <input id="radio-2" type="radio" name="action" value="influence-others">
+        I to influence other patients
+      </label>
+      </div>
+      <!-- -->
+
+      <!-- Improve GP services -->
+      <div class="multiple-choice">
+      <label>
+        <input id="radio-3" type="radio" name="action" value="improve-services">
+        I want to improve my GP sevices
+      </label>
+      </div>
+      <!-- -->
+
+      <!-- NHS investigates services -->
+      <div class="multiple-choice">
+      <label>
+        <input id="radio-4" type="radio" name="action" value="nhs-investigate">
+        I want NHS investigators to know something thats happened
+      </label>
+      </div>
+      <!-- -->
+
+      <!-- say something positive -->
+      <div class="multiple-choice">
+      <label>
+        <input id="radio-5" type="radio" name="action" value="say-something-positive">
+        I want to acknowledge something positive at my surgery
+      </label>
+      </div>
+      <!-- -->
+
+    </fieldset>
+    <input type=submit class="button" value=Submit>
+  </form>
+  <!-- End of radio buttons -->
+
+</body>
 </html>
