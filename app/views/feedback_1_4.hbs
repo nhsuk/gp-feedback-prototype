@@ -3,8 +3,24 @@
     <title>Feedback</title>
   </head>
   <body>
-    <h2>You can get in touch with CQC</h2>
-    <p>What you need to do</p>
-    <p><a href="#">This is the link for how to get there</a></p>
+    <h2>You want your surgery and members of the public to see your feedback</h2>
+
+    <ol>
+      <li>Contact your surgery.</li>
+      <li>Leave a review on NHS Choices.</li>
+    </ol>
+
+    <hr />
+
+    {{> feedback_content/contact_the_surgery
+        number="1."
+    }}
+
+    <hr />
+
+    {{> feedback_content/leave_review_nhs_choices
+        number="2."
+    }}
+    
   </body>
 </html>
