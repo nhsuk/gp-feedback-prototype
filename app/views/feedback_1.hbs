@@ -5,13 +5,20 @@
 </head>
 <body>
 
+  <h2 class="">Who do you want to get your feedback? </h2>
+
+  <details class="" role="group">
+    <summary data-analytics="summary" role="button" aria-controls="details-content-0" aria-expanded="false">
+      <span class="details__summary">Why are we asking this question?</span>
+    </summary>
+    <div id="details-content-0" aria-hidden="true">
+      <p>Where you go to leave feedback depends on who you want to get it.</p>
+    </div>
+  </details>
+
   <!-- Start of radio buttons -->
   <form method="get" class="form" action="">
     <fieldset>
-      <legend>
-        <h2 class="">Who do you want to see your feedback? </h2>
-      </legend>
-
       <div class="multiple-choice__container">
         <label class="multiple-choice multiple-choice--checkbox">
           <input class="multiple-choice__input" type="checkbox" name="action" value="staff">
@@ -23,10 +30,10 @@
         </label>
         <label class="multiple-choice multiple-choice--checkbox">
           <input class="multiple-choice__input" type="checkbox" name="action" value="investigator">
-          Investigators who check standards at the surgery
+          Someone who checks standards at the surgery
         </label>
       </div>
-      
+
     </fieldset>
     <input type=submit class="button" value=Next>
   </form>
