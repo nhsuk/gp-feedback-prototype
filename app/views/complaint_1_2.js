@@ -1,19 +1,13 @@
-module.exports = function (input, req) {
+module.exports = function(input, req) {
   switch (input.action) {
-    case 'nmc':
+    case 'no':
       input.redirect = '/complaint_1_2_1';
       break;
-    case 'gmc':
+    case 'gp':
       input.redirect = '/complaint_1_2_2';
       break;
-    case 'phso':
-      input.redirect = '/complaint_1_2_2';
-      break;
-    case 'nhs-england':
-      input.redirect = '/complaint_1_2_1';
-      break;
-    case 'gp-surgery':
-      input.redirect = '/complaint_1_2_1';
+    case 'nurse':
+      input.redirect = '/complaint_1_2_3';
       break;
   }
 
