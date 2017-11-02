@@ -1,3 +1,11 @@
+# GP Feedback Prototypes
+
+| Lab | Date       | Branch | App                                                    |
+|-----|------------|--------|:-------------------------------------------------------|
+| 1   | 01/11/2017 |lab/1   | https://gp-feedback-prototype-lab1.herokuapp.com/start |
+| 2   | TBC        |lab/2   | https://gp-feedback-prototype-lab2.herokuapp.com/start |
+
+
 # NHSUK Prototype Kit
 
 ## About the kit
