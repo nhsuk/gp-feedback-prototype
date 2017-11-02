@@ -1,3 +1,11 @@
+# GP Feedback Prototypes
+
+| Lab | Date       | Branch | Link to app on Heroku                                               |
+|-----|------------|--------|:-------------------------------------------------------|
+| 1   | 01/11/2017 |[:octocat:](https://github.com/nhsuk/gp-feedback-prototype/tree/lab/1)   | [:link:](https://gp-feedback-prototype-lab1.herokuapp.com/start) |
+| 2   | TBC        |[:octocat:](https://github.com/nhsuk/gp-feedback-prototype/tree/lab/2)   | [:link:](https://gp-feedback-prototype-lab2.herokuapp.com/start) |
+
+
 # NHSUK Prototype Kit
 
 ## About the kit
