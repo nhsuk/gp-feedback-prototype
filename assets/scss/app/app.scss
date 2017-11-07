@@ -1,9 +1,33 @@
 // Add your custom CSS here
 .local-header {
-  margin:0;
+  margin: 0;
 }
 
-.spacer {
-  margin: 16px 0;
-  background-color: white !important;
+.section {
+  margin: 40px 0;
+  @media (min-width: 640px) {
+    margin: 64px 0 0;
+  }
+
+  &:first-of-type {
+    margin: 16px 0 0;
+    @media (min-width: 640px) {
+      margin: 32px 0 0;
+    }
+    @media (min-width: 925px) {
+      margin: 32px 0 0;
+    }
+  }
+}
+
+.form-control {
+  margin-top: 8px;
+  width: 100%;
+  border: 2px solid #ddd;
+  font-size: 24px;
+  line-height: 32px;
+
+  @media (min-width: 640px) {
+    width: 50%;
+  }
 }
