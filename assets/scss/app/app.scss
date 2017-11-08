@@ -68,16 +68,46 @@ p {
 
 }
 
-.checked {
-    color: orange;
-}
-
-.fa {
+.fa-star {
   font-size: 32px !important;
   line-height: 32px !important;
   padding-right: 8px;
+
+  &:focus {
+    color: orange;
+    outline: none;
+  }
 }
 
 .button__spacing {
   margin-top: 64px;
+}
+
+.form-line {
+  margin-top: 24px;
+
+  @media (min-width: 640px) {
+    margin-top: 32px;
+  }
+}
+
+.form-textbox {
+  margin-top: 8px;
+}
+
+textarea {
+  margin-top: 8px !important;
+}
+
+.submission__container {
+  padding: 60px;
+  background-color: #d8dde0;
+  box-shadow: 0 2px 0 #adb8be;
+  text-align: center;
+
+  margin:0 auto;
+
+  @media (min-width: 640px) {
+    width: 80%;
+  }
 }
