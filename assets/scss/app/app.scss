@@ -1,4 +1,5 @@
 // Add your custom CSS here
+
 .local-header {
   margin: 0;
 }
@@ -33,5 +34,50 @@
 }
 
 .p--no-margin-top {
-  margin-top: 08px;
+  margin-top: 8px;
+}
+
+ol {
+  list-style: none;
+  padding-left: 16px;
+
+  @media (min-width: 640px) {
+    list-style: decimal;
+    padding-left: 36px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: 640px) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.multiple-choice {
+  font-size: 16px;
+  line-height: 32px;
+
+  @media (min-width: 640px) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+}
+
+.checked {
+    color: orange;
+}
+
+.fa {
+  font-size: 32px !important;
+  line-height: 32px !important;
+  padding-right: 8px;
+}
+
+.button__spacing {
+  margin-top: 64px;
 }
