@@ -3,13 +3,13 @@ module.exports = function(input, req) {
     console.log(input.action);
     switch (input.action) {
       case 'staff':
-        input.redirect = '/feedback_1_outcome_1';
+        input.redirect = '/4a_nhs_england';
         break;
       case 'public':
-        input.redirect = '/feedback_1_outcome_2';
+        input.redirect = '/4b_nhs_choices';
         break;
       case 'investigator':
-        input.redirect = '/feedback_1_outcome_3';
+        input.redirect = '/4c_cqc';
         break;
     }
   } else {

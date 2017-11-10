@@ -80,7 +80,11 @@ p {
 }
 
 .button__spacing {
-  margin-top: 64px;
+  margin: 24px 0; 
+
+  @media (min-width: 640px) {
+    margin: 40px 0;
+  }
 }
 
 .form-line {
