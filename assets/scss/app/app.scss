@@ -79,13 +79,6 @@ p {
   }
 }
 
-.button__spacing {
-  margin: 24px 0; 
-
-  @media (min-width: 640px) {
-    margin: 40px 0;
-  }
-}
 
 .form-line {
   margin-top: 24px;
@@ -123,4 +116,21 @@ textarea {
 
 .button--disabled {
   opacity: .5;
+}
+
+.button--secondary {
+  margin-top: 16px;
+
+  @media (min-width: 640px) {
+    margin-top: 0px;
+    margin-left: 16px;
+  }
+}
+
+.button__spacing {
+  margin: 32px 0;
+
+  @media (min-width: 640px) {
+    margin: 40px 0;
+  }
 }
