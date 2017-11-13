@@ -79,6 +79,8 @@ p {
 }
 
 .fa-star {
+  text-shadow: 0px 0px 1px #666;
+  color: #f5f5f5;
   font-size: 32px !important;
   line-height: 32px !important;
   padding-right: 8px;
@@ -138,9 +140,23 @@ textarea {
 }
 
 .button__spacing {
-  margin: 32px 0;
+  margin: 48px 0 0 0;
 
   @media (min-width: 640px) {
-    margin: 40px 0;
+    margin: 64px 0 0 0;
   }
+}
+
+.form-textbox {
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: 640px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.multiple-choice__container {
+  padding: 0px 0 16px 0;
 }
