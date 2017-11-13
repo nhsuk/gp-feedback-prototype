@@ -1,10 +1,10 @@
 module.exports = function(input, req) {
   switch (input.action) {
     case 'yes':
-      input.redirect = '/6_response_recieved';
+      input.redirect = '/12_gp_nurse_midwife';
       break;
     case 'no':
-      input.redirect = '11_potential_risk_to_patients';
+      input.redirect = '/14_can_you_talk_to_gp';
       break;
   }
 
