@@ -1,18 +1,57 @@
 <h2>Your ratings</h2>
 <p class="heading__meta">This step is optional</p>
-<hr />
-<h3>Telephone access</h3>
-<p class="p--no-margin-top">Are you able to get through to the surgery by telephone?</p>
 
-<span tabindex="1" class="fa fa-star"></span>
-<span tabindex="2" class="fa fa-star"></span>
-<span tabindex="3" class="fa fa-star"></span>
-<span tabindex="4" class="fa fa-star"></span>
-<span tabindex="5" class="fa fa-star"></span>
+<hr />
+
+<div class="section">
+  <h3>Telephone access</h3>
+  <p class="p--no-margin-top">Are you able to get through to the surgery by telephone?</p>
+</div>
+
+<div class="stars">
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
 
 <div class="button__spacing">
-  <a href="/nhs-choices-4_2"><button class="button" >Next</button></a>
+  <a href="nhs-choices-4_2"><button class="button" id="next" disabled="">Next</button></a>
   <a href="/nhs-choices-8"><button class="button button--secondary">Skip to review page</button></a>
 </div>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+<script>$(function() {
+  var hovered = 'false';
+  $('.stars span').mouseover(function(){
+      if (hovered == 'false'){
+        $('#next').prop('disabled', true);
+        $('.stars').removeClass('clicked');
+        $(this).addClass('hover');
+        $(this).prevAll().addClass('hover');
+        $(this).nextAll().removeClass('hover');
+      }
+  })
+  $('.stars span').click(function(){
+    hovered = 'true';
+    setTimeout(hover, 1000);
+    $(this).addClass('hover');
+    $('.stars').addClass('clicked');
+    $('#next').prop('disabled', false);
+  });
+  $('.stars').mouseleave(function(){
+    if(!$('.stars').is('.clicked')){
+      $('.stars span').removeClass('hover');
+      $('#next').prop('disabled', true);
+    }
+  });
+  function hover(){
+    hovered = 'false';
+  }
+});</script>
