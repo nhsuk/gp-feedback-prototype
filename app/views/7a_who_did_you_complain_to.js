@@ -15,6 +15,9 @@ module.exports = function(input, req) {
     case 'nmc':
       input.redirect = '/8e_ask_for_judicial_review';
       break;
+    case 'none':
+      input.redirect = '/11_potential_risk_to_patients';
+      break;
   }
 
   return input;
