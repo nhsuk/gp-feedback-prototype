@@ -1,9 +1,6 @@
 module.exports = function (input, req) {
   switch (input.action) {
-    case 'positive':
-      input.redirect = '/3_who_should_see_this';
-      break;
-    case 'negative':
+    case 'feedback':
       input.redirect = '/3_who_should_see_this';
       break;
     case 'complaint':
