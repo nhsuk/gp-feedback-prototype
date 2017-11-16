@@ -1,22 +1,10 @@
 <h2>Which do you want to do?</h2>
 
-<!-- Start of radio buttons -->
-<form method="get" class="form" action="">
-  <fieldset>
-    <div class="multiple-choice__container">
-      <label class="multiple-choice multiple-choice--radio">
-        <input class="multiple-choice__input" type="radio" name="action" value="feedback">
-        Give feedback - positive or negative
-      </label>
-      <label class="multiple-choice multiple-choice--radio">
-        <input class="multiple-choice__input" type="radio" name="action" value="complaint">
-        Make a formal complaint
-      </label>
-    </div>
-  </fieldset>
-
-  <input type=submit class="button" value=Next>
-</form>
-<!-- End of radio buttons -->
+{{> components/radio_button_2
+  radio-1="Give feedback - positive or negative"
+  radio-1-value="feedback"
+  radio-2="Make a formal complaint"
+  radio-2-value="complaint"
+}}
 
 {{> components/back_to_start }}

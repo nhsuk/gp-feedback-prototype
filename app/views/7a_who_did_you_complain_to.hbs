@@ -1,41 +1,16 @@
 <h2>Who did you complain to?</h2>
 
-<!-- Start of radio buttons -->
-<form method="get" class="form" action="">
-  <fieldset>
-    <div class="multiple-choice__container">
-
-      <label class="multiple-choice multiple-choice--radio">
-        <input class="multiple-choice__input" type="radio" name="action" value="gp">
-        GP surgery
-      </label>
-
-      <label class="multiple-choice multiple-choice--radio">
-        <input class="multiple-choice__input" type="radio" name="action" value="nhs-england">
-        NHS England
-      </label>
-
-      <label class="multiple-choice multiple-choice--radio">
-        <input class="multiple-choice__input" type="radio" name="action" value="phso">
-        Parliamentary and Health Services Ombudsman
-      </label>
-
-      <label class="multiple-choice multiple-choice--radio">
-        <input class="multiple-choice__input" type="radio" name="action" value="gmc">
-        General Medical Council
-      </label>
-
-      <label class="multiple-choice multiple-choice--radio">
-        <input class="multiple-choice__input" type="radio" name="action" value="nmc">
-        Nursing and Midwifery Council
-      </label>
-
-      <label class="multiple-choice multiple-choice--radio">
-        <input class="multiple-choice__input" type="radio" name="action" value="none">
-        None of these above
-      </label>
-    </div>
-
-  </fieldset>
-  <input type=submit class="button" value=Next>
-</form>
+{{> components/radio_button_6
+  radio-1="GP surgery"
+  radio-1-value="gp"
+  radio-2="NHS England"
+  radio-2-value="nhs-england"
+  radio-3="Parliamentary and Health Services Ombudsman"
+  radio-3-value="phso"
+  radio-4="General Medical Council"
+  radio-4-value="gmc"
+  radio-5="Nursing and Midwifery Council"
+  radio-5-value="nmc"
+  radio-6="None of these above"
+  radio-6-value="none"
+}}
