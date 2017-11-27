@@ -1,0 +1,24 @@
+<h2>Reviews for your GP surgery</h2>
+
+<div class="grid-row">
+  {{#each reviews as |review|}}
+    <ul class="results">
+      <h2>{{review.title}} ({{review.monthOfVisit}})</h2>
+      <li class="results__item results__item--nearby">
+        <div class="results__details">
+           <p>{{review.userReview}}</p>
+        </div>
+        {{#if review.gpResponse}}
+        <ul class="results">
+          <li class="results__item results__item--nearby">
+            <div class="results__details">
+              <p>Surgery Response: {{review.gpResponse}}</p>
+            </div>
+          </li>
+        </ul>
+        {{/if}}
+      </li>
+    </ul>
+  {{/each}}
+</div>
+

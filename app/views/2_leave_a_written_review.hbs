@@ -2,27 +2,22 @@
 <!--<p class="heading__meta">This step is optional</p>-->
 <hr />
 
-<div class="section">
-  <div class="form-line">
-  <label for="input-with-support" class="form-label">
-    <h3>The title of your review</h3>
-    <!-- <span class="form-label__hint" id="hintId"><p>Max 60 characters</p></span>-->
-  </label>
-  <input type="text" placeholder="" name="input-with-support" id="input-with-support" class="form-textbox" aria-describedby="hintId">
+<form action="2_leave_a_written_review" method="POST">
+  <div class="section">
+    <div class="form-line">
+      <label for="title" class="form-label"><h3>The title of your review</h3></label>
+      <input type="text" placeholder="" name="title" id="title" class="form-textbox" aria-describedby="hintId">
+    </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="form-line">
-    <label for="input-with-support" class="form-label">
-      <h3>The main text of your review</h3>
-      <!--<span class="form-label__hint" id="hintId"><p>Max 3000 characters</p></span-->
-    </label>
-    <textarea rows="17" class="form-textbox" placeholder=" "></textarea>
+  <div class="section">
+    <div class="form-line">
+      <label for="input-with-support" class="form-label"><h3>The main text of your review</h3></label>
+      <textarea rows="17" class="form-textbox" name="review" placeholder=" "></textarea>
+    </div>
   </div>
-</div>
 
-<div class="button__spacing">
-  <a href="/3_would_you_like_to_rate_the_surgery"><button class="button" >Next</button></a>
-  <!--<a href="/nhs-choices-9"><button class="button button--secondary">Skip to next page</button></a>-->
-</div>
+  <div class="button__spacing">
+    <input type="submit" class="button" value="Next">
+  </div>
+</form>

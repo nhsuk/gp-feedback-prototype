@@ -2,12 +2,13 @@
 <!--<p class="heading__meta">This step is required</p>-->
 <hr />
 
+<form action="10_when_did_this_happen" method="POST">
 <div class="form-field">
   <div class="form-line">
-  <label for="input-with-support" class="form-label">
+  <label for="monthOfVisit" class="form-label">
     When did you visit your GP surgery?
   </label>
-  <select class="form-textbox">
+  <select class="form-textbox" name="monthOfVisit">
   	<option value="Month / Year">Month / Year</option>
   	<option value="November 2017">November 2017</option>
   	<option value="October 2017">October 2017</option>
@@ -36,14 +37,7 @@
   </select>
 </div>
 
-<!-- <div class="form-line">
-  <label for="input-with-support" class="form-label">
-    When did you visit your GP surgery?
-  </label>
-  <span class="form-label__hint" id="hintId"><p>For example</p></span>
-  <input type="number" name="input-with-support" id="input-with-support" class="form-textbox form-textbox--date" aria-describedby="hintId">
-</div> -->
-
-<div class="button__spacing">
-  <p><a href="/11_submit_your_review"><button class="button" >Next</button></a></p>
-</div>
+  <div class="button__spacing">
+    <input type="submit" class="button" value="Next">
+  </div>
+</form>
