@@ -3,8 +3,8 @@
 <div class="grid-row">
   {{#each reviews as |review|}}
     <ul class="results">
-      <div class="results__date">{{review.monthOfVisit}}</div>
       <h3 class="results__title">{{review.title}}</h3>
+      <div class="results__date">{{review.screename}}, {{review.monthOfVisit}}</div>
       <li class="results__item results__item--nearby">
         <div class="results__details">
            <p>{{review.userReview}}</p>
@@ -15,7 +15,7 @@
     <div class="gp-response">
       <div class="gp-response__item">
         <div class="gp-response__details">
-          <h4 class="gp-response--heading">Surgery Response:</h4>
+          <h4 class="gp-response--heading">Surgery Response</h4>
           <p class="gp-response--paragraph">{{review.gpResponse}}</p>
         </div>
       </div>
