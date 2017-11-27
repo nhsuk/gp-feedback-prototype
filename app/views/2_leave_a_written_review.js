@@ -5,7 +5,7 @@ module.exports = function (input, req) {
         userReview: input.review
       })
 
-    input.redirect = '/11_submit_your_review'
+    input.redirect = '/10_when_did_this_happen'
   }
 
   return input
