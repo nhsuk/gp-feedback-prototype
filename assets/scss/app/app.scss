@@ -194,9 +194,11 @@ button[disabled] {
   border: 6px solid #0072ce;
   margin-right: 16px;
   margin-left: 16px;
+  margin-top: 24px !important;
 
   @media (min-width: 640px) {
     padding: 32px;
+    margin-top: 32px !important;
   }
 }
 
@@ -219,7 +221,6 @@ button[disabled] {
   border-bottom: 6px solid #0072ce;
 
   @media (min-width: 640px) {
-    margin-bottom: 32px;
     padding-left: 32px;
     padding-right: 32px;
   }

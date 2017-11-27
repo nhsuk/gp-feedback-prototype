@@ -1,5 +1,5 @@
 module.exports = function (input, req) {
-  input.reviews = [ 
+  input.reviews = [
     {
       monthOfVisit: 'October 2017',
       title: 'Outstanding service from reception through to pharmacy',
@@ -11,7 +11,18 @@ module.exports = function (input, req) {
       title: 'Appointment today',
       userReview: 'Female procedure. Both the Doctor performing the procedure and the attending nurse were so friendly, reassuring and professional. The nurse was kind and did their utmost to relax me, their attitude was exemplary and they are a credit to the practice. The doctor was, as always, excellent.',
       gpResponse: 'Thank you so much for your lovely comments. I\'m glad the clinical teamwork provided you with a great service and treatment. Both the GP and Nurse will really be delighted with this feedback.'
-    }
+    },
+    {
+      monthOfVisit: 'May 2017',
+      title: 'Surgery not fit for purpose-avoid',
+      userReview: 'The reception staff are rude and unhelpful (feedback given to practice manager but as ever, nothing done about it) Appointment system is antiquated and totally patient unfriendly. For example, half the days in the week offer only "book in the day" appts...so join the chaos and try to dial in with everyone else at 8am. There are just four of these available. Rest are emergency. Despite being hospitalised with my complaint, after 2 days of trying this to get an appt, i have given up as they can offer me nothing that i can get to with childcare in place. Advance appointment refused. The GPs are largely locum, which says a lot.i had to make a formal complaint to the British Medical Association about one of their permanent GPs. I’m moving practices as soon as i can.',
+    },
+    {
+      monthOfVisit: 'April 2017',
+      title: 'The most rude receptionist ever! Avoid',
+      userReview: 'The receptionist at this surgery is probably the most disrespectful person on this earth. I have never felt so belittled after attempting to book an appointment with my doctor. I work and cannot attend on the day to wait for hours. The receptionist refused to book me an appointment and prevents me from seeing my GP. The only option is to go there in the morning and wait for a time slot. Refused access to my GP because of the disgraceful receptionist working there and even when you go there the reception ignores you for a good 10 minutes anyway. Good doctors but seriously need to reconsider employing a receptionist with some level of humanity. Very disappointed with my treatment and have since changed practices. As this place is not a walk in centre to only be allowed to see a GP on the day, it’s a centre and appointments should be available.',
+      gpResponse: 'Thank you for the comments you have made regarding our practice, we welcome constructive criticism. We are extremely disappointed that you are not happy with the service you received at our practice and feel the need to move practice. We can only apologise for any upset or inconvenience you may have encountered whilst contacting the practice. Our reception staff have regular training updates and always try to be helpful and considerate to the needs of all our patients. Patients can book an appointment up to 4 weeks in advance. We also offer a book on the day service on Monday and Friday mornings. Emergency appointments and book on the day appointments are also available for the remainder of the week, together with advanced bookings. We are also able to offer appointments from 6.30pm midweek and at the weekend through the Extended Working Hours scheme. As it is currently the holiday season, our GPs have been taking their annual holidays. Therefore, the practice employs locum GPs to ensure that we are able to continue to offer a safe and effective service for our patients. If you would like to discuss this matter further, please do not hesitate to contact the surgery.'
+    },
   ];
   input.reviews.push({
     monthOfVisit: req.session.validated.monthOfVisit,
