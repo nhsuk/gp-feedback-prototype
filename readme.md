@@ -4,7 +4,7 @@
 |-----|------------|--------|:-------------------------------------------------------|
 | 1   | 01/11/2017 |[:octocat:](https://github.com/nhsuk/gp-feedback-prototype/tree/lab/1)   | [:link:](https://gp-feedback-prototype-lab1.herokuapp.com/landing-page) |
 | 2   | 15/11/17       |[:octocat:](https://github.com/nhsuk/gp-feedback-prototype/tree/lab/2)   | [:link:](https://gp-feedback-prototype-lab2.herokuapp.com/1_start) |
-| 3   | 29/11/17        |[:octocat:](https://github.com/nhsuk/gp-feedback-prototype/tree/lab/2)   | [:link:](https://gp-feedback-prototype-lab3.herokuapp.com/1_start) |
+| 3   | 29/11/17        |[:octocat:](https://github.com/nhsuk/gp-feedback-prototype/tree/lab/2)   | [:link:](https://gp-feedback-prototype-lab3.herokuapp.com/2_leave_a_written_review) |
 
 
 # NHSUK Prototype Kit
