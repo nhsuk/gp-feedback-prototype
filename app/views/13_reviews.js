@@ -41,7 +41,7 @@ module.exports = function (input, req) {
       gpResponse: 'Thank you so much for your lovely feedback which we will be certain to share with everyon here. We are sorry to lose you but wish you all the very best in your new home and with your new surgery. On behalf of Drs Tankel, Owen, Rafferty & Jewkes and the Team at Clarendon'
     },
   ];
-  input.reviews.push({
+  input.reviews.unshift({
     monthOfVisit: req.session.validated.monthOfVisit,
     title: req.session.validated.title,
     userReview: req.session.validated.userReview
