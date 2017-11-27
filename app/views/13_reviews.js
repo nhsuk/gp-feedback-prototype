@@ -18,5 +18,6 @@ module.exports = function (input, req) {
     title: req.session.validated.title,
     userReview: req.session.validated.userReview
   });
+  input.surgeryName = req.session.validated.surgeryName;
   return input
 }

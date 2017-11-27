@@ -6,6 +6,10 @@ module.exports = function (input, req) {
       })
 
     input.redirect = '/10_when_did_this_happen'
+  } else {
+    req.session.validated = Object.assign({}, req.session.validated, {
+        surgeryName: req.query.surgeryName
+      })
   }
 
   return input
