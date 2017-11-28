@@ -4,7 +4,7 @@
   {{#each reviews as |review|}}
     <div class="results {{#if review.gpResponse}}gp-response--remove-border{{/if}} ">
       <h3 class="results__title">{{review.title}}</h3>
-      <div class="results__date">{{review.screenName}} <span class="user__review--display"> (your review)</span>, {{review.monthOfVisit}}</div>
+      <div class="results__date">{{review.screenName}} <span class="user__review--display">(your review)</span>, {{review.monthOfVisit}}</div>
       <div class="results__item results__item--nearby">
         <p class="results__details">
           {{{review.userReview}}}

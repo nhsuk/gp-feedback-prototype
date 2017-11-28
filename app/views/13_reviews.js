@@ -29,6 +29,12 @@ module.exports = function (input, req) {
       gpResponse: 'Thank you so much for your lovely comments. I\'m glad the clinical teamwork provided you with a great service and treatment. Both the GP and Nurse will really be delighted with this feedback.'
     },
     {
+      screenName:'Val Steele',
+      monthOfVisit: 'May 2017',
+      title: 'Second to None',
+      userReview: 'We would like to thank everyone at this surgery for the excellent care given to our recently deceased uncle Ashton Sykes. Reception always tried to help him with his requests/demands for services. The GP\'s who visited him on every request at home, sometimes hours after the end of surgery, when most of us have been home for ages. The GP\'s always tried to include him in any decision regarding his complex health needs, particularly if the decision was to go into hospital or not. He was always treated with dignity, respect, compasion and empathy. <br> <br /> The District Nurses who came out to him at home over a long period of time. Many of us do not have a GP service of this calibre.',
+    },
+    {
       screenName:'Anonymous',
       monthOfVisit: 'May 2017',
       title: 'Surgery not fit for purpose-avoid',
