@@ -2,7 +2,7 @@
 
 <div class="grid-row">
   {{#each reviews as |review|}}
-    <ul class="results">
+    <div class="results {{#if review.gpResponse}}gp-response--remove-border{{/if}} ">
       <h3 class="results__title">{{review.title}}</h3>
       <div class="results__date">{{review.screename}}, {{review.monthOfVisit}}</div>
       <li class="results__item results__item--nearby">
@@ -10,7 +10,7 @@
            <p>{{review.userReview}}</p>
         </div>
       </li>
-    </ul>
+    </div>
     {{#if review.gpResponse}}
     <div class="gp-response">
       <div class="gp-response__item">

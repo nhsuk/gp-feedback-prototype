@@ -191,7 +191,7 @@ button[disabled] {
 
 .results {
   padding: 16px;
-  border: 6px solid #0072ce;
+  border: 6px solid #ddd;
   margin-right: 16px;
   margin-left: 16px;
   margin-top: 24px !important;
@@ -207,7 +207,7 @@ button[disabled] {
 }
 
 .gp-response {
-  background-color: rgba(0,114,206,0.05);
+  background-color: #f5f5f5;
   margin-right: 16px;
   margin-left: 16px;
   margin-top: 0!important;
@@ -216,9 +216,9 @@ button[disabled] {
   padding-right: 16px;
   padding-top: 4px;
   padding-bottom: 16px;
-  border-left: 6px solid #0072ce;
-  border-right: 6px solid #0072ce;
-  border-bottom: 6px solid #0072ce;
+  border-left: 6px solid #ddd;
+  border-right: 6px solid #ddd;
+  border-bottom: 6px solid #ddd;
 
   @media (min-width: 640px) {
     padding-left: 32px;
@@ -252,4 +252,8 @@ button[disabled] {
 
 .results__title {
   margin-top: 8px;
+}
+
+.gp-response--remove-border {
+  border-bottom: 0;
 }
