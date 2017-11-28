@@ -196,6 +196,11 @@ button[disabled] {
   margin-left: 16px;
   margin-top: 24px !important;
 
+  &:first-child {
+    background-color: rgba(254, 242, 215, 0.4);
+    border: 6px solid #FEF2D7;
+  }
+
   @media (min-width: 640px) {
     padding: 32px;
     margin-top: 32px !important;
