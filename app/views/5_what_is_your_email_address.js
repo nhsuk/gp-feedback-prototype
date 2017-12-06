@@ -5,7 +5,7 @@ module.exports = function (input, req) {
       screenName: input.checks ? 'Anonymous' : input.screenName
       })
 
-    input.redirect = '/12_review_submitted'
+    input.redirect = '/6_check_your_review'
   }
 
   return input

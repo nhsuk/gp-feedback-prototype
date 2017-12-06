@@ -286,3 +286,15 @@ button[disabled] {
     margin:0 auto;
   }
 }
+
+.back-link__arrow--left {
+  width: 0;
+  height: 0;
+  border-top: 08px solid transparent;
+  border-bottom: 08px solid transparent;
+
+  border-right:08px solid #005eb8;
+
+  display: inline-block;
+  margin-right: 8px;
+}
