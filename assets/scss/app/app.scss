@@ -196,14 +196,14 @@ button[disabled] {
   margin-left: 16px;
   margin-top: 24px !important;
 
-  &:first-child {
-    background-color: rgba(254, 242, 215, 0.4);
-    border: 6px solid #FEF2D7;
+  //&:first-child {
+    //background-color: rgba(254, 242, 215, 0.4);
+    //border: 6px solid #FEF2D7;
 
-    .user__review--display {
-      display: inline-block;
-    }
-  }
+    //.user__review--display {
+    //  display: inline-block;
+    //}
+  //}
 
   @media (min-width: 640px) {
     padding: 32px;
