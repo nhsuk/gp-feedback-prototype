@@ -298,3 +298,38 @@ button[disabled] {
   display: inline-block;
   margin-right: 8px;
 }
+
+.form-date {
+
+  .form-group {
+    float: left;
+    width: 80px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    clear: none;
+    margin-top: 0;
+  }
+}
+
+.form-control {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  width: 100%;
+  padding: 5px 4px 4px;
+  border: 2px solid #0b0c0c;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: 3px solid #ffb81c;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

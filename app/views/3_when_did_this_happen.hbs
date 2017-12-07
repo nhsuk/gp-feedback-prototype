@@ -3,39 +3,24 @@
 <hr />
 
 <form action="3_when_did_this_happen" method="POST">
-<div class="form-field">
-  <div class="form-line">
-  <label for="monthOfVisit" class="form-label">
-    When did you visit your GP surgery?
-  </label>
-  <select class="form-textbox" name="monthOfVisit">
-  	<option value="Month / Year">Month / Year</option>
-  	<option value="November 2017">November 2017</option>
-  	<option value="October 2017">October 2017</option>
-  	<option value="September 2017">September 2017</option>
-  	<option value="August 2017">August 2017</option>
-  	<option value="July 2017">July 2017</option>
-  	<option value="June 2017">June 2017</option>
-  	<option value="May 2017">May 2017</option>
-  	<option value="April 2017">April 2017</option>
-  	<option value="March 2017">March 2017</option>
-  	<option value="February 2017">February 2017</option>
-  	<option value="January 2017">January 2017</option>
-  	<option value="December 2016">December 2016</option>
-  	<option value="November 2016">November 2016</option>
-  	<option value="October 2016">October 2016</option>
-  	<option value="September 2016">September 2016</option>
-  	<option value="August 2016">August 2016</option>
-  	<option value="July 2016">July 2016</option>
-  	<option value="June 2016">June 2016</option>
-  	<option value="May 2016">May 2016</option>
-  	<option value="April 2016">April 2016</option>
-  	<option value="March 2016">March 2016</option>
-  	<option value="February 2016">February 2016</option>
-  	<option value="January 2016">January 2016</option>
-  	<option value="December 2015">December 2015</option>
-  </select>
-</div>
+  <div class="form-group">
+    <fieldset>
+      <label for="input-with-support monthOfVisit" class="form-label">
+        When did you visit your GP surgery?
+        <span class="form-label__hint" id="hintId">For example, 10 2017</span>
+      </label>
+      <div class="form-date">
+        <div class="form-group form-group-month">
+          <label class="form-label" for="dob-month">Month</label>
+          <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+        </div>
+        <div class="form-group form-group-year">
+          <label class="form-label" for="dob-year">Year</label>
+          <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017">
+        </div>
+      </div>
+    </fieldset>
+  </div>
 
   <div class="button__spacing">
     <input type="submit" class="button" value="Next">
