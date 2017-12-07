@@ -16,6 +16,7 @@ const bodyParser = require('body-parser')
 const chalk = require('chalk')
 const favicon = require('serve-favicon')
 
+
 /**
  * Config
  */
@@ -38,6 +39,8 @@ const router = express.Router()
 const routes = require('./app/routes')
 
 let app = express()
+
+app.locals.reviews = require('./app/views/getReviews');
 
 // Authenticate against the environment-provided credentials, if running
 // the app in production
