@@ -2,7 +2,7 @@
 <!--<p class="heading__meta">This step is optional</p>-->
 <hr />
 
-<p>Your review must be honest, respectful and useful to other patients. We won’t publish your review if it breaks our rules. </p>
+<p>Your review must be honest, respectful and useful to other patients. We won’t publish your review if it breaks our rules: </p>
 
 <div class="panel">
   <div class="panel__content panel__content--half">
@@ -27,24 +27,28 @@
   </div>
 </div>
 
-<p><a href="/2_2_read_other_reviews">Read reviews by other patients</a></p>
+<p>You can also:</p>
+<ul>
+  <li><a href="/2_2_read_other_reviews">read reviews by other patients</a></li>
+  <li><a href="2_3_rules_on_writing_reviews">read full rules on writing reviews</a></li>
+</ul>
 
-<p><a href="#">Read full rules on writing reviews</a></p>
 
-
-<form action="2_write_your_review_v2" method="POST">
-  <div class="section">
-    <div class="form-line">
-      <label for="body" class="form-label"><h3>Your review</h3></label>
-      <span class="form-label__hint" id="hintId">3,000 characters maximum</span>
-      <textarea rows="17" class="form-textbox" name="body" placeholder=" ">{{body}}</textarea>
+<div class="section">
+  <form action="2_write_your_review_v2" method="POST">
+    <div class="section">
+      <div class="form-line">
+        <label for="body" class="form-label"><h3>Your review</h3></label>
+        <span class="form-label__hint" id="hintId">3,000 characters maximum</span>
+        <textarea rows="17" class="form-textbox" name="body" placeholder=" ">{{body}}</textarea>
+      </div>
     </div>
-  </div>
 
-  <div class="button__spacing">
-    <input type="submit" class="button" value="Next">
-  </div>
-</form>
+    <div class="button__spacing">
+      <input type="submit" class="button" value="Next">
+    </div>
+  </form>
+</div>
 
 {{> components/back_link
   label="Back"
