@@ -6,7 +6,7 @@ module.exports = function (input, req) {
       emailAddress2: input.emailAddress2
       })
 
-    input.redirect = '/7_check_your_review'
+    input.redirect = '/8_check_your_review'
   } else {
     input.emailAddress = req.session.validated.emailAddress;
     input.emailAddress2 = req.session.validated.emailAddress2;

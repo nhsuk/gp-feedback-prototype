@@ -4,7 +4,7 @@ module.exports = function (input, req) {
       displayname: input.anonymous ? 'Anonymous' : input.displayname
       })
 
-    input.redirect = '/6_what_is_your_email_address'
+    input.redirect = '/6_what_is_your_name'
   } else {
     input.displayname = req.session.validated.displayname;
   }

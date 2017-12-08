@@ -1,0 +1,24 @@
+<h2>What’s your name?</h2>
+
+<hr />
+
+<p>We won’t check that this is your real name, but you should not pretend to be another person.</p>
+
+<p>We will check that you aren’t leaving several reviews from the same account using different names. </p>
+
+<p>We won’t publish your review if you leave a name that is rude or offensive.</p>
+
+<form method="POST" action="6_what_is_your_name">
+  <div class="form-line">
+    <label for="displayname" class="form-label">
+      Your name
+    </label>
+    <input type="text" name="displayname" id="displayname" class="form-textbox" aria-describedby="hintId" value="{{displayname}}">
+  </div>
+
+  <input type="submit" class="button" value="Next">
+</form>
+
+{{> components/back_link
+  label="Back"
+}}

@@ -356,3 +356,16 @@ input[type=number]::-webkit-outer-spin-button {
     margin:8px 0;
   }
 }
+
+.multiple-choice {
+  display: block;
+  width: 100% !important;
+}
+
+.multiple-choice__container {
+  margin-bottom: 100px;
+
+  @media (min-width: 640px) {
+    margin-bottom: 120px;
+  }
+}
