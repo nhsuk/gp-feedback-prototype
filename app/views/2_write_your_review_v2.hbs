@@ -2,36 +2,42 @@
 <!--<p class="heading__meta">This step is optional</p>-->
 <hr />
 
-<p>You should write your review in English. To keep the review useful: </p>
+<p>Your review must be honest, respectful and useful to other patients. We won’t publish your review if it breaks our rules. </p>
 
-<ul>
-  <li>explain what happened to make you leave the review</li>
-  <li>if you’re expressing an opinion, back it up with facts</li>
-  <li>only include comments about the surgery you’re reviewing</li>
-  <li>if you’re writing about a problem, say how your surgery could improve things</li>
-</ul>
-
-<p>We’ll check your review</p>
-
-<p>We won’t publish your review if you:</p>
-
-<ul>
-  <li>include people’s names or something that could easily identify them</li>
-  <li>abuse,</li>
-</ul>
-
-<form action="2_write_your_review" method="POST">
-  <div class="section">
-    <div class="form-line">
-      <label for="title" class="form-label"><h3>The title of your review</h3></label>
-      <input type="text" placeholder="" name="title" id="title" class="form-textbox" aria-describedby="hintId">
-    </div>
+<div class="panel">
+  <div class="panel__content panel__content--half">
+    <h3>Do</h3>
+    <ul class="list--check">
+      <li>write in English </li>
+      <li>give as much detail as possible about what  happened</li>
+      <li>back up your opinions with facts</li>
+      <li>be respectful, even if you’re angry</li>
+    </ul>
   </div>
+  <div class="panel__content panel__content--half">
+    <h3>Don’t</h3>
+    <ul class="list--cross">
+      <li>leave more than 1 review about a single incident</li>
+      <li>identify people - for example by including their name, gender or contact details</li>
+      <li>swear, abuse or threaten people </li>
+      <li>be obscene, racist, sexist or homophobic</li>
+      <li>include anything that could break the law or affect legal proceedings</li>
+      <li>WRITE IN CAPITALS LIKE THIS</li>
+    </ul>
+  </div>
+</div>
 
+<p><a href="/2_2_read_other_reviews">Read reviews by other patients</a></p>
+
+<p><a href="#">Read full rules on writing reviews</a></p>
+
+
+<form action="2_write_your_review_v2" method="POST">
   <div class="section">
     <div class="form-line">
-      <label for="input-with-support" class="form-label"><h3>The main text of your review</h3></label>
-      <textarea rows="17" class="form-textbox" name="review" placeholder=" "></textarea>
+      <label for="body" class="form-label"><h3>Your review</h3></label>
+      <span class="form-label__hint" id="hintId">3,000 characters maximum</span>
+      <textarea rows="17" class="form-textbox" name="body" placeholder=" ">{{body}}</textarea>
     </div>
   </div>
 
@@ -39,3 +45,15 @@
     <input type="submit" class="button" value="Next">
   </div>
 </form>
+
+{{> components/back_link
+  label="Back"
+}}
+
+<!-- <form action="2_write_your_review_v1" method="POST">
+  <div class="section">
+    <div class="form-line">
+      <label for="title" class="form-label"><h3>Form label</h3></label>
+      <input type="text" placeholder="" name="title" id="title" class="form-textbox" aria-describedby="hintId" value="{{title}}">
+    </div>
+  </div> -->
