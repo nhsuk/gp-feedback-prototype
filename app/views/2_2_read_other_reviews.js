@@ -1,4 +1,4 @@
 module.exports = function (input, req) {
-  input.reviews = req.app.locals.reviews;
+  input.reviews = req.session.validated.reviews;
   return input
 }

@@ -40,8 +40,6 @@ const routes = require('./app/routes')
 
 let app = express()
 
-app.locals.reviews = require('./app/views/getReviews');
-
 // Authenticate against the environment-provided credentials, if running
 // the app in production
 if (env === 'production' && useAuth === 'true') {
