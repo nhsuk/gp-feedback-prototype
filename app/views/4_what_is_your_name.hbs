@@ -5,10 +5,10 @@
   <form method="POST" action="4_what_is_your_name">
   <p>Text goes here</p>
   <div class="form-line">
-    <label for="input-with-support" class="form-label">
+    <label for="displayname" class="form-label">
       Your name
     </label>
-    <input type="text" placeholder="Joe Bloggs" name="input" id="input-with-support" class="form-textbox" aria-describedby="hintId">
+    <input type="text" placeholder="Joe Bloggs" name="displayname" id="displayname" class="form-textbox" aria-describedby="hintId" value="{{displayname}}">
   </div>
 
 
@@ -16,7 +16,7 @@
     <h3>Remaining anonymous</h3>
     <p>Text goes here</p>
     <label style="width:100%;" class="multiple-choice multiple-choice multiple-choice--checkbox">
-      <input class="multiple-choice__input" type="checkbox" name="checks" value="1">
+      <input class="multiple-choice__input" type="checkbox" name="anonymous" value="1">
       Tick to remain anonymous
     </label>
   </div>

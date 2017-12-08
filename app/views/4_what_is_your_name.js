@@ -1,11 +1,12 @@
 module.exports = function (input, req) {
   if (req.method === 'POST') {
-    console.log(input);
     req.session.validated = Object.assign({}, req.session.validated, {
-      screenName: input.checks ? 'Anonymous' : input.screenName
+      displayname: input.anonymous ? 'Anonymous' : input.displayname
       })
 
     input.redirect = '/5_what_is_your_email_address'
+  } else {
+    input.displayname = req.session.validated.displayname;
   }
 
   return input

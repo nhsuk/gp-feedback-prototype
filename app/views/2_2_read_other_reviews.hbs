@@ -1,47 +1,20 @@
-<h2>Reviews other patients reviews</h2>
+<h2>Reviews for your GP surgery</h2>
 
 {{> components/back_link
   label="Back to write your review"
   link="/2_write_your_review_v1"
 }}
 
-{{> components/user_review
-  title="test"
-  screenName="test"
-  MonthOfVisit="test"
-  userReview="test"
-}}
-
-{{> components/user_review
-  title="test"
-  screenName="test"
-  MonthOfVisit="test"
-  userReview="test"
-}}
-
-{{> components/user_review
-  title="test"
-  screenName="test"
-  MonthOfVisit="test"
-  userReview="test"
-}}
-
-
-{{> components/user_review
-  title="test"
-  screenName="test"
-  MonthOfVisit="test"
-  userReview="test"
-}}
-
-
-{{> components/user_review
-  title="test"
-  screenName="test"
-  MonthOfVisit="test"
-  userReview="test"
-}}
-
+<div class="grid-row">
+  {{#each reviews as |review|}}
+    {{> components/user_review
+      title=review.title
+      screenName=review.displayname
+      MonthOfVisit=review.monthOfVisit
+      userReview=review.body
+    }}
+  {{/each}}
+</div>
 
 {{> components/back_link
   label="Back to write your review"

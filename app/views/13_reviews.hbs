@@ -1,25 +1,12 @@
-<h2>Reviews for {{surgeryName}}</h2>
+<h2>Reviews for your GP surgery</h2>
 
 <div class="grid-row">
   {{#each reviews as |review|}}
-    <div class="results {{#if review.gpResponse}}gp-response--remove-border{{/if}} ">
-      <h3 class="results__title">{{review.title}}</h3>
-      <div class="results__date">{{review.screenName}} <span class="user__review--display">(your review)</span>, {{review.monthOfVisit}}</div>
-      <div class="results__item results__item--nearby">
-        <p class="results__details">
-          {{{review.userReview}}}
-        </p>
-      </div>
-    </div>
-    {{#if review.gpResponse}}
-    <div class="gp-response">
-      <div class="gp-response__item">
-        <div class="gp-response__details">
-          <h4 class="gp-response--heading">Surgery Response</h4>
-          <p class="gp-response--paragraph">{{{review.gpResponse}}}</p>
-        </div>
-      </div>
-    </div>
-    {{/if}}
+    {{> components/user_review
+      title=review.title
+      screenName=review.displayname
+      MonthOfVisit=review.monthOfVisit
+      userReview=review.body
+    }}
   {{/each}}
 </div>
