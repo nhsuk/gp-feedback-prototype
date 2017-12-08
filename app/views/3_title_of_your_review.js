@@ -5,7 +5,7 @@ module.exports = function (input, req) {
       body: input.body
     })
 
-    input.redirect = '/3_title_of_your_review';
+    input.redirect = '/4_when_did_this_happen';
   } else {
     input.title = req.session.validated.title;
     input.body = req.session.validated.body;

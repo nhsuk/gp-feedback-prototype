@@ -1,0 +1,29 @@
+<h2>Write a title for your review</h2>
+<!--<p class="heading__meta">This step is optional</p>-->
+<hr />
+
+<p>Your title should tell other people what your review is about. Try to give a short summary of what you have written. For example: </p>
+
+<ul>
+  <li>Receptionists are really helpful </li>
+  <li>I find it hard to get an appointment </li>
+</ul>
+
+
+<form action="3_title_of_your_review" method="POST">
+  <div class="section">
+    <div class="section">
+      <div class="form-line">
+        <label for="body" class="form-label"><h3>Title of your review</h3></label>
+        <span class="form-label__hint" id="hintId">60 characters maximum</span>
+        <input type="text" placeholder="" name="title" id="title" class="form-textbox" aria-describedby="hintId" value="{{title}}">
+      </div>
+
+  <div class="button__spacing">
+    <input type="submit" class="button" value="Next">
+  </div>
+</form>
+
+{{> components/back_link
+  label="Back"
+}}

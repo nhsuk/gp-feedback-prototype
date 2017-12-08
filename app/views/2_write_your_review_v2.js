@@ -5,7 +5,7 @@ module.exports = function (input, req) {
         userReview: input.review
       })
 
-    input.redirect = '/3_when_did_this_happen'
+    input.redirect = '/3_title_of_your_reviewn'
   } else {
     req.session.validated = Object.assign({}, req.session.validated, {
         surgeryName: req.query.surgeryName
