@@ -6,6 +6,9 @@ module.exports = function (input, req) {
     })
 
     input.redirect = '/3_when_did_this_happen';
+  } else {
+    input.title = req.session.validated.title;
+    input.body = req.session.validated.body;
   }
   return input
 }

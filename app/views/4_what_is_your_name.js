@@ -5,6 +5,8 @@ module.exports = function (input, req) {
       })
 
     input.redirect = '/5_what_is_your_email_address'
+  } else {
+    input.displayname = req.session.validated.displayname;
   }
 
   return input
