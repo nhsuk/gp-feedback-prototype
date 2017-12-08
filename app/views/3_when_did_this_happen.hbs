@@ -1,13 +1,11 @@
-<h2>A little more information</h2>
-<!--<p class="heading__meta">This step is required</p>-->
+<h2>When did the incident in this review happen? </h2>
 <hr />
 
 <form action="3_when_did_this_happen" method="POST">
   <div class="form-group">
     <fieldset>
       <label for="input-with-support monthOfVisit" class="form-label">
-        When did you visit your GP surgery?
-        <span class="form-label__hint" id="hintId">For example, 10 2017</span>
+        <span class="form-label__hint" id="hintId">For example, for October 2017 put: 10 2017 </span>
       </label>
       <div class="form-date">
         <div class="form-group form-group-month">
@@ -26,3 +24,7 @@
     <input type="submit" class="button" value="Next">
   </div>
 </form>
+
+{{> components/back_link
+  label="Back"
+}}
