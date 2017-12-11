@@ -1,6 +1,5 @@
 module.exports = function (input, req) {
   if (req.method === 'POST') {
-    console.log(input);
     req.session.validated = Object.assign({}, req.session.validated, {
       emailAddress: input.emailAddress,
       emailAddress2: input.emailAddress2
