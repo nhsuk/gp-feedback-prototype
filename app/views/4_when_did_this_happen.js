@@ -5,7 +5,7 @@ module.exports = function (input, req) {
         visitYear: input.visitYear,
       })
 
-    input.redirect = '/5_do_you_want_to_write_your_name'
+    input.redirect = '/2_write_your_review_v1'
   } else {
     input.visitMonth = req.session.validated.visitMonth;
     input.visitYear = req.session.validated.visitYear;

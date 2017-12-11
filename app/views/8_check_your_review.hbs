@@ -2,9 +2,11 @@
 <hr />
 
 <div class="callout callout--info">
-  <h3>Remember, we will reject your review if you:</h3>
+  <h3>We won’t publish your review if:</h3>
   <ul>
-    <li>don’t write in English </li>
+    <li>don’t include enough facts to help other patients make a decision</li>
+    <li>try too hard to influence people - for example by telling them not to use the surgery</li>
+    <li>write about something that happened over 2 years ago</li>
     <li>have already left a review about this incident</li>
     <li>include information that could identify someone (for example their name, gender or contact details)</li>
     <li>swear, abuse or threaten people </li>
@@ -12,9 +14,22 @@
     <li>include anything that could break the law or affect legal proceedings</li>
     <li>WRITE IN CAPITALS </li>
   </ul>
+  <p><a href="/2_3_rules_on_writing_reviews">Read full list of rules for writing reviews</a></p>
 </div>
 
 <dl style="margin-top:40px;" class="govuk-check-your-answers cya-questions-long">
+
+  <div>
+    <dt class="cya-question">
+              When the incident happened
+            </dt>
+    <dd class="cya-answer">
+      {{review.monthOfVisit}}
+    </dd>
+    <dd class="cya-change">
+      <a href="4_when_did_this_happen">Change</a>
+    </dd>
+  </div>
 
   <div>
     <dt class="cya-question">
@@ -37,18 +52,6 @@
     </dd>
     <dd class="cya-change">
       <a href="3_title_of_your_review">Change</a>
-    </dd>
-  </div>
-
-  <div>
-    <dt class="cya-question">
-              When the incident happened
-            </dt>
-    <dd class="cya-answer">
-      {{review.monthOfVisit}}
-    </dd>
-    <dd class="cya-change">
-      <a href="4_when_did_this_happen">Change</a>
     </dd>
   </div>
 

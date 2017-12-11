@@ -7,8 +7,7 @@ module.exports = function (input, req) {
       reviews: reviews
     })
 
-    input.redirect = '2_write_your_review_v1';
-  } 
+    input.redirect = '4_when_did_this_happen';
+  }
   return input
 }
-
