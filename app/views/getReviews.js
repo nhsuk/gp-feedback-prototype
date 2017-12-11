@@ -5,7 +5,7 @@ module.exports = (function () {
 
   const xml = fs.readFileSync('app/data/reviews.xml', "utf8");
   var json = parser.toJson(xml, { object: true });
-  return json.feed.entry.map(e => { 
+  return json.feed.entry.filter(e => e.content.div).map(e => { 
     // console.log(e);
     return {
       title: e.title["$t"],
