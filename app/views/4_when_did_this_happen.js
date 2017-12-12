@@ -5,7 +5,7 @@ module.exports = function (input, req) {
         visitYear: input.visitYear,
       })
 
-    input.redirect = req.session.validated.returnToOverview ? '8_check_your_review' : '/2_write_your_review_v1' ;
+    input.redirect = req.session.validated.returnToOverview ? '8_check_your_review' : `/2_write_your_review_${req.session.validated.version}` ;
   } else {
     input.visitMonth = req.session.validated.visitMonth;
     input.visitYear = req.session.validated.visitYear;

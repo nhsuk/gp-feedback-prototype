@@ -6,6 +6,7 @@ module.exports = function (input, req) {
     displayname: req.session.validated.displayname,
     emailAddress: req.session.validated.emailAddress
   };
+  input.version = req.session.validated.version;
 
   req.session.validated = Object.assign({}, req.session.validated, {
     returnToOverview: true 
