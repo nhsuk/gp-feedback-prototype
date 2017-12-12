@@ -8,5 +8,10 @@
       MonthOfVisit=review.monthOfVisit
       userReview=review.body
     }}
+    {{#if review.response}}
+      {{> components/gp-response
+        gpResponse=review.response
+      }}
+    {{/if}}
   {{/each}}
 </div>
