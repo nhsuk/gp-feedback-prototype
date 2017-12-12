@@ -7,5 +7,9 @@ module.exports = function (input, req) {
     emailAddress: req.session.validated.emailAddress
   };
 
+  req.session.validated = Object.assign({}, req.session.validated, {
+    returnToOverview: true 
+  })
+
   return input;
 }
