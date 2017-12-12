@@ -5,7 +5,6 @@
   link="/2_write_your_review_v1"
 }}
 
-<div class="grid-row">
   {{#each reviews as |review|}}
     {{> components/user_review
       title=review.title
@@ -14,7 +13,6 @@
       userReview=review.body
     }}
   {{/each}}
-</div>
 
 {{> components/back_link
   label="Back to write your review"
